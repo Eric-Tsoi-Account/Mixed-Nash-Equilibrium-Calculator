@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset = "UTF-8">
+      <title>Mixed nash equilibrium calculator</title>
+      <link rel = "stylesheet"
+         href = "./materialize/dist/css/materialize.css" />
+      <script src="./view.js"></script>
+   </head>
+   
+   <body>
+      <div class = "container">
+         <br> <br>
+         <h6 style="padding: 10px;">This is a small program that attempts to calculate the corresponding probabilities of players adopting different strategies based on the payoff matrix of a two players non-cooperative game.</h6>
+         <!-- #######  THIS IS A COMMENT - Visible only in the source editor #########-->
+         <p style="font-size: 1.5em;">&nbsp;</p>
+         <table style="width: 510px, padding: 20px;">
+         <tbody>
+         <tr>
+         <td style="width: 194px;">Participant X \  Y</td>
+         <td style="width: 88px;">Strategy A</td>
+         <td style="width: 88px;">&nbsp;</td>
+         <td style="width: 88px;">Strategy B</td>
+         <td style="width: 88px;">&nbsp;</td>
+         </tr>
+         <tr>
+         <td style="width: 194px;">Strategy A</td>
+         <td style="width: 88px;"><input  id = "A" size = 5 type = "number" value=0></td>
+         <td style="width: 88px;"><input  id = "B" size = 5 type = "number" value=0></td>
+         <td style="width: 88px;"><input  id = "C" size = 5 type = "number" value=0></td>
+         <td style="width: 88px;"><input  id = "D" size = 5 type = "number" value=0></td>
+         </tr>
+         <tr>
+         <td style="width: 194px;">Strategy B</td>
+         <td style="width: 88px;"><input  id = "E" size = 5 type = "number" value=0></td>
+         <td style="width: 88px;"><input  id = "F" size = 5 type = "number" value=0></td>
+         <td style="width: 88px;"><input  id = "G" size = 5 type = "number" value=0></td>
+         <td style="width: 88px;"><input  id = "H" size = 5 type = "number" value=0></td>
+         </tr>
+         </tbody>
+         </table>
+         <p>&nbsp;</p>
+         <button class = "btn btn-success" align="left" id = "OpenDialog" onclick = "popup()" style="padding-bottom: 10px;">More Information</button>
+         <button class = "btn btn-success" align="right" id = "Calc" style="padding-bottom: 10px; float: right;" onclick = "calc()">Submit Data</button>
+      </div>
+   </body>
+
+</html>
